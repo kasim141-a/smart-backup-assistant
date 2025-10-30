@@ -1,0 +1,113 @@
+/* Material Design 3 Theme - Home Assistant Colors */
+
+:root {
+    /* Primary color (Home Assistant purple) */
+    --md-sys-color-primary: #6750a4;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #eaddff;
+    --md-sys-color-on-primary-container: #21005e;
+
+    /* Secondary color */
+    --md-sys-color-secondary: #625b71;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #e8def8;
+    --md-sys-color-on-secondary-container: #1e192b;
+
+    /* Tertiary color */
+    --md-sys-color-tertiary: #7d5260;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #ffd8e4;
+    --md-sys-color-on-tertiary-container: #370b1e;
+
+    /* Error color */
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+
+    /* Background */
+    --md-sys-color-background: #fffbff;
+    --md-sys-color-on-background: #1c1b1f;
+
+    /* Surface */
+    --md-sys-color-surface: #fffbff;
+    --md-sys-color-on-surface: #1c1b1f;
+    --md-sys-color-surface-variant: #e7e0ec;
+    --md-sys-color-on-surface-variant: #49454e;
+
+    /* Outline */
+    --md-sys-color-outline: #7a757f;
+    --md-sys-color-outline-variant: #cac4cf;
+
+    /* Shadow */
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+
+    /* Inverse colors */
+    --md-sys-color-inverse-surface: #313033;
+    --md-sys-color-inverse-on-surface: #f3eff4;
+    --md-sys-color-inverse-primary: #d0bcff;
+}
+
+/* Dark theme (optional) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Primary color (dark mode) */
+        --md-sys-color-primary: #d0bcff;
+        --md-sys-color-on-primary: #381e72;
+        --md-sys-color-primary-container: #4f378b;
+        --md-sys-color-on-primary-container: #eaddff;
+
+        /* Secondary color (dark mode) */
+        --md-sys-color-secondary: #ccc2dc;
+        --md-sys-color-on-secondary: #332d41;
+        --md-sys-color-secondary-container: #4a4458;
+        --md-sys-color-on-secondary-container: #e8def8;
+
+        /* Tertiary color (dark mode) */
+        --md-sys-color-tertiary: #efb8c8;
+        --md-sys-color-on-tertiary: #4a2532;
+        --md-sys-color-tertiary-container: #633b48;
+        --md-sys-color-on-tertiary-container: #ffd8e4;
+
+        /* Error color (dark mode) */
+        --md-sys-color-error: #ffb4ab;
+        --md-sys-color-on-error: #690005;
+        --md-sys-color-error-container: #93000a;
+        --md-sys-color-on-error-container: #ffdad6;
+
+        /* Background (dark mode) */
+        --md-sys-color-background: #1c1b1f;
+        --md-sys-color-on-background: #e6e1e5;
+
+        /* Surface (dark mode) */
+        --md-sys-color-surface: #1c1b1f;
+        --md-sys-color-on-surface: #e6e1e5;
+        --md-sys-color-surface-variant: #49454f;
+        --md-sys-color-on-surface-variant: #cac4d0;
+
+        /* Outline (dark mode) */
+        --md-sys-color-outline: #938f99;
+        --md-sys-color-outline-variant: #49454f;
+
+        /* Inverse colors (dark mode) */
+        --md-sys-color-inverse-surface: #e6e1e5;
+        --md-sys-color-inverse-on-surface: #313033;
+        --md-sys-color-inverse-primary: #6750a4;
+    }
+
+    body {
+        background-color: #1c1b1f;
+        color: #e6e1e5;
+    }
+
+    .card {
+        background: #2b2930;
+        color: #e6e1e5;
+    }
+
+    header {
+        background: linear-gradient(135deg, #4f378b 0%, #6750a4 100%);
+    }
+}
+

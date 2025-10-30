@@ -1,0 +1,132 @@
+# Home Assistant Add-on Configuration
+# Smart Backup & Restore Assistant
+
+# Basic Information
+name: "Smart Backup & Restore Assistant"
+description: >
+  A modern Home Assistant add-on featuring Material Design 3 interface
+  for intelligent backup management. Validates backups before restoration,
+  checks for version compatibility, and provides detailed risk assessments.
+version: "1.0.0"
+slug: "smart_backup_assistant"
+url: "https://github.com/your-username/smart-backup-assistant"
+
+# Add-on Metadata
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+
+# Startup Configuration
+startup: services
+
+# Web Interface Configuration
+ports:
+  8099/tcp: 8099
+
+# Ingress Configuration (Recommended)
+ingress: true
+ingress_entry: /
+
+# Panel Configuration
+panel_icon: mdi:backup-restore
+panel_title: "Backup Assistant"
+
+# Home Assistant API Access
+hassio_api: true
+hassio_role: manager
+auth_api: true
+homeassistant_api: true
+
+# Backup Configuration
+backup: hot
+
+# Map Folders
+map:
+  - backup:rw
+  - share:rw
+  - ssl:ro
+  - media:ro
+
+# Environment Variables
+environment:
+  LOG_LEVEL: info
+
+# Add-on Options (User Configurable)
+options:
+  # Backup Settings
+  auto_backup_enabled: true
+  backup_schedule: "daily"
+  backup_time: "03:00"
+  backup_retention_days: 7
+  backup_name_template: "Auto Backup {date}"
+  
+  # Validation Settings
+  validate_before_restore: true
+  allow_version_mismatch: false
+  check_breaking_changes: true
+  
+  # Notification Settings
+  notifications_enabled: true
+  notify_on_backup_complete: true
+  notify_on_backup_failed: true
+  notify_on_validation_warning: true
+  notification_service: "notify.notify"
+  
+  # Advanced Settings
+  compression_enabled: true
+  password_protected: false
+  backup_password: ""
+  max_concurrent_backups: 1
+  backup_timeout_minutes: 60
+  
+  # UI Settings
+  theme: "auto"
+  show_advanced_options: false
+  
+  # Debug Settings
+  debug_mode: false
+  log_level: "info"
+
+# Schema Definition (Validation)
+schema:
+  # Backup Settings
+  auto_backup_enabled: bool
+  backup_schedule: list(disabled|hourly|daily|weekly|monthly)
+  backup_time: str
+  backup_retention_days: int(1,365)
+  backup_name_template: str
+  
+  # Validation Settings
+  validate_before_restore: bool
+  allow_version_mismatch: bool
+  check_breaking_changes: bool
+  
+  # Notification Settings
+  notifications_enabled: bool
+  notify_on_backup_complete: bool
+  notify_on_backup_failed: bool
+  notify_on_validation_warning: bool
+  notification_service: str
+  
+  # Advanced Settings
+  compression_enabled: bool
+  password_protected: bool
+  backup_password: password?
+  max_concurrent_backups: int(1,5)
+  backup_timeout_minutes: int(5,180)
+  
+  # UI Settings
+  theme: list(auto|light|dark)
+  show_advanced_options: bool
+  
+  # Debug Settings
+  debug_mode: bool
+  log_level: list(debug|info|warning|error)
+
+# Image Configuration
+image: "ghcr.io/{arch}-smart-backup-assistant"
+
