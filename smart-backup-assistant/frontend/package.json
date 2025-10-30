@@ -1,0 +1,26 @@
+{
+  "name": "material-addon-frontend",
+  "version": "1.0.0",
+  "description": "Home Assistant add-on with Material Design Web Components",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "home-assistant",
+    "material-design",
+    "web-components"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@material/web": "^1.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.9.0"
+  }
+}
+
