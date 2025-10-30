@@ -64,7 +64,7 @@ Use this checklist before uploading to GitHub to ensure everything is ready.
 
 ### 1. Update Personal Information
 
-- [ ] Replace `YOUR_USERNAME` in README.md with your GitHub username
+- [ ] Replace `kasim141-a` in README.md with your GitHub username
 - [ ] Update copyright year in LICENSE if needed
 - [ ] Add your name/organization to LICENSE
 - [ ] Update contact information in CONTRIBUTING.md

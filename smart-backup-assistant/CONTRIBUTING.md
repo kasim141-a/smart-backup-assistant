@@ -82,7 +82,7 @@ If your change affects usage:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/smart-backup-assistant.git
+   git clone https://github.com/kasim141-a/smart-backup-assistant.git
    cd smart-backup-assistant
    ```
 

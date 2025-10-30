@@ -29,7 +29,7 @@ This repository contains the **Smart Backup & Restore Assistant** add-on for Hom
 3. Select **Repositories**
 4. Add this repository URL:
    ```
-   https://github.com/YOUR_USERNAME/smart-backup-assistant
+   https://github.com/kasim141-a/smart-backup-assistant
    ```
 5. Click **Add**
 6. Click **Close**
@@ -66,8 +66,8 @@ A powerful add-on that validates backups and checks for compatibility issues bef
 ## Support
 
 - 📖 [Full Documentation](smart-backup-assistant/README.md)
-- 💬 [GitHub Discussions](https://github.com/YOUR_USERNAME/smart-backup-assistant/discussions)
-- 🐛 [Issue Tracker](https://github.com/YOUR_USERNAME/smart-backup-assistant/issues)
+- 💬 [GitHub Discussions](https://github.com/kasim141-a/smart-backup-assistant/discussions)
+- 🐛 [Issue Tracker](https://github.com/kasim141-a/smart-backup-assistant/issues)
 - 💭 [Home Assistant Community](https://community.home-assistant.io/)
 
 ## Contributing
@@ -86,7 +86,7 @@ See [CHANGELOG.md](smart-backup-assistant/CHANGELOG.md) for version history.
 
 **If you like this add-on, please ⭐ star this repository!**
 
-[releases-shield]: https://img.shields.io/github/release/YOUR_USERNAME/smart-backup-assistant.svg
-[releases]: https://github.com/YOUR_USERNAME/smart-backup-assistant/releases
-[license-shield]: https://img.shields.io/github/license/YOUR_USERNAME/smart-backup-assistant.svg
+[releases-shield]: https://img.shields.io/github/release/kasim141-a/smart-backup-assistant.svg
+[releases]: https://github.com/kasim141-a/smart-backup-assistant/releases
+[license-shield]: https://img.shields.io/github/license/kasim141-a/smart-backup-assistant.svg
 

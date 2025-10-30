@@ -10,7 +10,7 @@
 4. Select **Repositories**
 5. In the text box, add this URL:
    ```
-   https://github.com/YOUR_USERNAME/smart-backup-assistant
+   https://github.com/kasim141-a/smart-backup-assistant
    ```
 6. Click **Add**
 7. Click **Close**
@@ -84,8 +84,8 @@ git commit -m "Initial commit: Smart Backup & Restore Assistant v1.0.0"
 ### Step 3: Push to GitHub
 
 ```bash
-# Add remote (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/smart-backup-assistant.git
+# Add remote (replace kasim141-a with your GitHub username)
+git remote add origin https://github.com/kasim141-a/smart-backup-assistant.git
 
 # Push to GitHub
 git branch -M main
@@ -105,18 +105,18 @@ git push -u origin main
 
 ### Step 5: Update Personal Information
 
-Replace `YOUR_USERNAME` in these files:
+Replace `kasim141-a` in these files:
 - `README.md` (repository root)
 - `smart-backup-assistant/README.md`
 - `repository.yaml`
 
 ```bash
 # On Linux/Mac:
-find . -type f -name "*.md" -o -name "*.yaml" | xargs sed -i 's/YOUR_USERNAME/your-actual-username/g'
+find . -type f -name "*.md" -o -name "*.yaml" | xargs sed -i 's/kasim141-a/your-actual-username/g'
 
 # On Windows (PowerShell):
 Get-ChildItem -Recurse -Include *.md,*.yaml | ForEach-Object {
-    (Get-Content $_) -replace 'YOUR_USERNAME', 'your-actual-username' | Set-Content $_
+    (Get-Content $_) -replace 'kasim141-a', 'your-actual-username' | Set-Content $_
 }
 ```
 
@@ -132,7 +132,7 @@ git push
 1. In your Home Assistant, add your repository:
    - Settings → Add-ons → Add-on Store
    - ⋮ → Repositories
-   - Add: `https://github.com/YOUR_USERNAME/smart-backup-assistant`
+   - Add: `https://github.com/kasim141-a/smart-backup-assistant`
 
 2. Verify the add-on appears in the store
 3. Install and test
@@ -220,7 +220,7 @@ Users install by:
 
 If you need help:
 
-- **GitHub Issues**: https://github.com/YOUR_USERNAME/smart-backup-assistant/issues
+- **GitHub Issues**: https://github.com/kasim141-a/smart-backup-assistant/issues
 - **Home Assistant Community**: https://community.home-assistant.io/
 - **Documentation**: See README.md in the add-on folder
 

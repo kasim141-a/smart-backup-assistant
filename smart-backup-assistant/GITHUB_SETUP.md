@@ -38,10 +38,10 @@ git commit -m "Initial commit: Smart Backup & Restore Assistant v1.0.0"
 
 ## Step 3: Connect to GitHub
 
-Replace `YOUR_USERNAME` with your actual GitHub username:
+Replace `kasim141-a` with your actual GitHub username:
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/smart-backup-assistant.git
+git remote add origin https://github.com/kasim141-a/smart-backup-assistant.git
 git branch -M main
 git push -u origin main
 ```
@@ -69,7 +69,7 @@ If prompted, enter your GitHub credentials or use a personal access token.
 4. Add your repository:
    ```json
    {
-     "name": "YOUR_USERNAME/smart-backup-assistant",
+    "name": "kasim141-a/smart-backup-assistant",
      "category": "addon"
    }
    ```
@@ -83,20 +83,20 @@ Users can add your repository manually:
 1. Open HACS in Home Assistant
 2. Click the three dots (⋮) in the top right
 3. Select **Custom repositories**
-4. Add your repository URL: `https://github.com/YOUR_USERNAME/smart-backup-assistant`
+4. Add your repository URL: `https://github.com/kasim141-a/smart-backup-assistant`
 5. Select category: **Add-on**
 6. Click **Add**
 
 ## Step 6: Update README.md
 
-Replace all instances of `YOUR_USERNAME` in README.md with your actual GitHub username:
+Replace all instances of `kasim141-a` in README.md with your actual GitHub username:
 
 ```bash
 # On Linux/Mac:
-sed -i 's/YOUR_USERNAME/your-actual-username/g' README.md
+sed -i 's/kasim141-a/your-actual-username/g' README.md
 
 # On Windows (PowerShell):
-(Get-Content README.md) -replace 'YOUR_USERNAME', 'your-actual-username' | Set-Content README.md
+(Get-Content README.md) -replace 'kasim141-a', 'your-actual-username' | Set-Content README.md
 ```
 
 Commit and push the changes:
@@ -245,7 +245,7 @@ Ensure:
 
 If you need help:
 
-- GitHub Discussions: https://github.com/YOUR_USERNAME/smart-backup-assistant/discussions
+- GitHub Discussions: https://github.com/kasim141-a/smart-backup-assistant/discussions
 - HACS Discord: https://discord.gg/apgchf8
 - Home Assistant Community: https://community.home-assistant.io/
 

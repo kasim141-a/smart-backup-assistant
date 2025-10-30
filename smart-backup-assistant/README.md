@@ -52,7 +52,7 @@ Home Assistant's built-in backup system is great, but it doesn't warn you about 
 3. Select **Repositories**
 4. Add this URL:
    ```
-   https://github.com/YOUR_USERNAME/smart-backup-assistant
+   https://github.com/kasim141-a/smart-backup-assistant
    ```
 5. Click **Add** then **Close**
 
@@ -306,8 +306,8 @@ Settings → Add-ons → Smart Backup & Restore Assistant → Log
 ### Community
 
 - 💬 [Home Assistant Community Forum](https://community.home-assistant.io/)
-- 💭 [GitHub Discussions](https://github.com/YOUR_USERNAME/smart-backup-assistant/discussions)
-- 🐛 [Issue Tracker](https://github.com/YOUR_USERNAME/smart-backup-assistant/issues)
+- 💭 [GitHub Discussions](https://github.com/kasim141-a/smart-backup-assistant/discussions)
+- 🐛 [Issue Tracker](https://github.com/kasim141-a/smart-backup-assistant/issues)
 
 ### Contributing
 
@@ -338,9 +338,9 @@ Special thanks to:
 
 **If you like this add-on, please ⭐ star this repository!**
 
-[releases-shield]: https://img.shields.io/github/release/YOUR_USERNAME/smart-backup-assistant.svg
-[releases]: https://github.com/YOUR_USERNAME/smart-backup-assistant/releases
-[license-shield]: https://img.shields.io/github/license/YOUR_USERNAME/smart-backup-assistant.svg
+[releases-shield]: https://img.shields.io/github/release/kasim141-a/smart-backup-assistant.svg
+[releases]: https://github.com/kasim141-a/smart-backup-assistant/releases
+[license-shield]: https://img.shields.io/github/license/kasim141-a/smart-backup-assistant.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
-[user_profile]: https://github.com/YOUR_USERNAME
+[user_profile]: https://github.com/kasim141-a
 
