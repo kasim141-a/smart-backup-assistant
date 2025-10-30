@@ -13,7 +13,7 @@ COPY frontend/package*.json ./
 COPY frontend/rollup.config.js ./
 
 # Install dependencies
-RUN npm install --production
+RUN npm install
 
 # Copy frontend source
 COPY frontend/src ./src/
