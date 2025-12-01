@@ -96,25 +96,31 @@ class BreakingChangesDB:
     
     def _fetch_breaking_changes(self) -> List[Dict]:
         """
-        Fetch breaking changes from Home Assistant release notes
+        Fetch breaking changes from a remote source
         
         Returns:
             List of breaking changes
         """
-        changes = []
+        # URL of the raw JSON file on GitHub
+        url = "https://raw.githubusercontent.com/home-assistant/home-assistant.io/next/current_version.json"
         
         try:
-            # Fetch from Home Assistant blog/releases
-            # For now, we'll use a curated list of common breaking changes
-            # In production, this would scrape the actual release notes
+            response = requests.get(url, timeout=10)
+            response.raise_for_status()  # Raise an exception for bad status codes
             
-            changes = self._get_curated_breaking_changes()
+            data = response.json()
             
-            logger.info(f"Fetched {len(changes)} breaking changes")
+            # Assuming the JSON structure contains the breaking changes
+            changes = data.get('breaking_changes', [])
+
+            logger.info(f"Fetched {len(changes)} breaking changes from {url}")
             return changes
             
-        except Exception as e:
+        except requests.exceptions.RequestException as e:
             logger.error(f"Failed to fetch breaking changes: {str(e)}")
+            return []
+        except json.JSONDecodeError as e:
+            logger.error(f"Failed to parse JSON response: {str(e)}")
             return []
     
     def _get_curated_breaking_changes(self) -> List[Dict]:
