@@ -262,6 +262,29 @@ def delete_backup(backup_id):
         }), 500
 
 # ============================================================================
+# Breaking Changes Endpoints
+# ============================================================================
+
+@app.route('/api/breaking-changes/update', methods=['POST'])
+def update_breaking_changes():
+    """Update the breaking changes database"""
+    try:
+        logger.info("Updating breaking changes database...")
+        result = breaking_changes_db.update_database()
+
+        return jsonify({
+            'success': True,
+            'message': 'Breaking changes database updated successfully',
+            'data': result
+        })
+    except Exception as e:
+        logger.error(f"Error updating breaking changes database: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+# ============================================================================
 # Activity Log Endpoints
 # ============================================================================
 

@@ -183,14 +183,15 @@ async function updateBreakingChangesDB() {
     try {
         showLoading(true, 'Updating breaking changes database...');
         
-        // Note: This endpoint needs to be added to the backend
-        // For now, we'll just show a success message
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await apiCall('/breaking-changes/update', {
+            method: 'POST'
+        });
         
-        showSuccess('Breaking changes database updated!');
+        showSuccess('Breaking changes database updated successfully!');
         
     } catch (error) {
         console.error('Failed to update database:', error);
+        showError('Failed to update breaking changes database: ' + error.message);
     } finally {
         showLoading(false);
     }
